@@ -1,0 +1,9 @@
+{
+    "name": "Pomodoro Total Time",
+    "version": "0.1.0",
+    "description": "Tell you how many pomodoros and hours you have tracked",
+    "homepage": "http://github.com/tonatiuh",
+    "engines": {
+        "foldingtext": ">2.0.0"
+    }
+}

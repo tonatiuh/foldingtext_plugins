@@ -1,0 +1,10 @@
+{
+  "name": "MySnippets",
+  "version": "0.1.0",
+  "description": "Adds my own snippets, commands, and key bindings to Folding Text.",
+  "homepage": "",
+  "engines": {
+    "foldingtext": ">2.0.0",
+    "taskpaper": ">3.0.0"
+  }
+}
