@@ -10,6 +10,6 @@ define(function(require, exports, module) {
 \nThird pomodoro for 25 minutes\
 \nBreak for 5 minutes\
 \nFourth pomodoro for 25 minutes\
-\nLong break for 15 minutes'
+\nLong break for 10 minutes'
     });
 });
