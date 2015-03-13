@@ -7,6 +7,7 @@ define(function(require, exports, module) {
                 var tree         = editor.tree();
                 var pomodoros    = 0;
                 var totalMinutes = 0;
+                var totalHours   = 0;
 
                 tree.nodes().forEach(function(node) {
                   if (!editor.nodeIsHiddenInFold(node)) {
@@ -27,7 +28,11 @@ define(function(require, exports, module) {
                   }
                 });
 
-                editor.replaceSelection('pomodoros: ' + pomodoros + '. minutes: ' + totalMinutes);
+                if (totalMinutes > 0) {
+                  totalHours = totalMinutes / 60;
+                }
+
+                editor.replaceSelection('pomodoros: ' + pomodoros + '. hours: ' + totalHours);
             }
         });
     });
