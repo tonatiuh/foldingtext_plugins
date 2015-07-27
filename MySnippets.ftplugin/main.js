@@ -13,22 +13,33 @@ var currentDay = function(){
 };
 
 var pomodoroStr = '## Pomodoro.timer\
-\nFirst pomodoro for 25 minutes\
+\n1st pomodoro for 25 minutes\
 \nBreak for 5 minutes\
-\nSecond pomodoro for 25 minutes\
+\n2nd pomodoro for 25 minutes\
 \nBreak for 5 minutes\
-\nThird pomodoro for 25 minutes\
+\n3rd pomodoro for 25 minutes\
 \nBreak for 5 minutes\
-\nFourth pomodoro for 25 minutes\
+\n4th pomodoro for 25 minutes\
+\nLong break for 10 minutes';
+
+var pomodoroLongStr = pomodoroStr + '\
+\n5th pomodoro for 25 minutes\
+\nBreak for 5 minutes\
+\n6th pomodoro for 25 minutes\
+\nBreak for 5 minutes\
+\n7th pomodoro for 25 minutes\
+\nBreak for 5 minutes\
+\n8th pomodoro for 25 minutes\
 \nLong break for 10 minutes';
 
 var pomodoroDayStr = '# ' + currentDay() + '\
 \n## Todo.todo\
 \n  - Plan the day @max(1)\
-\n\n' + pomodoroStr;
+\n\n' + pomodoroLongStr;
 
 define(function(require, exports, module) {
     var Extensions = require('ft/core/extensions').Extensions;
     Extensions.addSnippet({ ';pmd': pomodoroStr });
+    Extensions.addSnippet({ ';pmdL': pomodoroLongStr });
     Extensions.addSnippet({ ';pmdD': pomodoroDayStr });
 });
